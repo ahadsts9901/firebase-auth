@@ -28,17 +28,21 @@
         <input required id="email-login" type="email" class="input" placeholder="example@gmail.com">
         <label for="password-login">Password</label>
         <div class="r jcsb aic">
-            <input required id="password-login" type="password" class="input" placeholder="Password" minlength="4" maxlength="8">
+            <input required id="password-login" type="password" class="input" placeholder="Password" minlength="6" maxlength="10">
             <i class="bi bi-eye-slash" onclick="showPassword(event)"></i>
         </div>
         <p class="validationMessage"></p>
         <button type="submit" class="button">Login</button>
         <p class="center">Already have an account ?</p>
-        <a href="javascript:void(0)" onclick="window.location.pathname ='/signup' " class="center">SignUp</a>
+        <a href="javascript:void(0)" onclick="window.location.href ='../signup/index.html' " class="center">SignUp</a>
     </form>
 
     <p class="center name">Thanks For Visiting Regards! Muhammad Ahad&copy;</p>
 
+    <!-- firebase -->
+        <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
     <!-- sweet alert -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- javascript -->

@@ -28,21 +28,25 @@
         <input required id="last-name" type="text" class="input" placeholder="Last Name" minlength="3" maxlength="8">
         <input required id="email-signup" type="email" class="input" placeholder="E-mail">
         <div class="r jcsb aic">
-            <input required id="password-signup" type="password" class="input" placeholder="Password" minlength="4" maxlength="8">
+            <input required id="password-signup" type="password" class="input" placeholder="Password" minlength="6" maxlength="10">
             <i class="bi bi-eye-slash" onclick="showPassword(event)"></i>
         </div>
         <div class="r jcsb aic">
-            <input required id="password-signup-repeat" type="password" class="input" placeholder="Repeat Password" minlength="4" maxlength="8">
+            <input required id="password-signup-repeat" type="password" class="input" placeholder="Repeat Password" minlength="6" maxlength="10">
             <i class="bi bi-eye-slash" onclick="showPassword(event)"></i>
         </div>
         <p class="validationMessage"></p>
         <button type="submit" class="button">Signup</button>
         <p class="center">Don't have an account ?</p>
-        <a href="javascript:void(0)" onclick="window.location.pathname ='/login' " class="center">Login</a>
+        <a href="javascript:void(0)" onclick="window.location.href ='../login/index.html' " class="center">Login</a>
     </form>
 
     <p class="center name">Thanks For Visiting Regards! Muhammad Ahad&copy;</p>
 
+     <!-- firebase -->
+     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
     <!-- sweet alert -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- javascript -->
